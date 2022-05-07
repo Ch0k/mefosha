@@ -5,6 +5,12 @@ div id="#{dom_id product}"
   p
     strong Description:
     =< product.description
+
+  p
+    strong Pictures:
+    - product.pictures.each do |picture|
+      = image_tag(picture)
+
   p
     strong Price:
     =< product.price

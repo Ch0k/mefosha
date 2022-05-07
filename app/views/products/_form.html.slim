@@ -12,11 +12,14 @@
 
   div
     = form.label :description, style: "display: block"
-    = form.text_area :description
-
+    = form.rich_text_area :description
   div
     = form.label :price, style: "display: block"
     = form.number_field :price
+
+  div
+    = form.label :pictures
+    = form.file_field :pictures, multiple: true
 
   div
     = form.label :published, style: "display: block"
