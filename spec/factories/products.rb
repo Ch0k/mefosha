@@ -4,5 +4,9 @@ FactoryBot.define do
     description { "MyText" }
     price { 1 }
     published { false }
+
+    trait :invalid do
+      title { nil }
+    end
   end
 end
